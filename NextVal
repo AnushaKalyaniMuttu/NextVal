@@ -1,0 +1,2 @@
+@Query(value = "SELECT * FROM your_table WHERE column_name = :yourParameter", nativeQuery = true)
+List<YourEntity> findByColumnNameNative(@Param("yourParameter") String yourParameter);
